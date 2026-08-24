@@ -1,0 +1,8 @@
+# Pacotes de aplicativos — instalados via 01-apps.sh (repos de terceiros)
+# habilitados temporariamente e desabilitados no fim do build (validate-repos).
+firefox               # Navegador Mozilla Firefox
+firefox-langpacks     # Langpacks (traduções) do Firefox
+code                  # Visual Studio Code (repo oficial Microsoft)
+yazi                  # Gerenciador de arquivos em terminal (COPR lihaohong/yazi)
+jetbrains-mono-fonts  # Fonte monoespaçada JetBrains Mono (COPR elxreno/jetbrains-mono-fonts)
+vm-curator            # Criação/configuração de máquinas virtuais (COPR linuxgamerlife/lgl-vm-curator)

@@ -2,7 +2,6 @@
 btop        # Monitor de recursos do sistema (CPU, RAM, disco, rede) em terminal
 zoxide      # Atalho inteligente de navegação entre diretórios (substituto do cd)
 eza         # Listador de arquivos moderno (substituto do ls, com ícones e git)
-yazi        # Gerenciador de arquivos em terminal (TUI, rápido e moderno)
 gh          # CLI oficial do GitHub
 
 #Firmware e Drivers Gráficos Universais (AMD e Intel)
@@ -103,7 +102,6 @@ kitty                       # Emulador de terminal gráfico moderno e rápido
 dnfdragora                  # GUI para gerenciamento de pacotes do sistema (dnf)
 
 # Fontes e Suporte a Idiomas
-JetBrainsMono                # Fonte monoespaçada JetBrains Mono (para programação)
 tesseract-langpack-por          # Dados de idioma do Tesseract OCR (português)
 tesseract-langpack-eng          # Dados de idioma do Tesseract OCR (inglês)
 tesseract-langpack-fra          # Dados de idioma do Tesseract OCR (francês)
@@ -136,9 +134,7 @@ swtpm                 # Emulação de TPM 2.0 para máquinas virtuais
 edk2-ovmf             # Firmware UEFI/OVMF para máquinas virtuais
 passt                 # Conectividade de rede para determinados cenários de VMs/containers
 spice-vdagent         # Agente de integração SPICE para máquinas virtuais
-vm-curator            # Criação/configuração de máquinas virtuais (COPR linuxgamerlife/lgl-vm-curator)
 
 #Desenvolvimento
-code        # VSCodium (repo oficial paulcarroty)
-firefox       # Navegador Mozilla Firefox
-web-agent-linux-x64.rpm  # TOTVS Web Agent (RPM local em files/dnf/)
+# TOTVS Web Agent entra via RPM local: build_files/files/rpm/ (00-rpms.sh)
+# Apps (VSCode Microsoft, yazi, vm-curator, JetBrains Mono, Firefox pt-BR): build_files/app.txt (01-apps.sh)

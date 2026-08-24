@@ -1,5 +1,8 @@
 
 PackageKit                  # updates automáticos de RPM — conflita com o modelo bootc
+kcharselect                 # Seletor de caracteres (removido do @kde-desktop)
+krfb                        # Compartilhamento de tela VNC do KDE (removido do @kde-desktop)
+kwrite                      # Editor de texto simples do KDE (removido do @kde-desktop)
 plasma-browser-integration  # integração com navegador — não utilizada
 firewall-config             # GUI GTK de firewall — usamos plasma-firewall (KDE)
 mariadb                     # Banco de dados MariaDB (servidor) — não utilizado

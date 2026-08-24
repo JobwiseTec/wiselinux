@@ -11,6 +11,8 @@ set -ouex pipefail
 ALLOWED=(
   "fedora"
   "fedora-updates"
+  "updates"
+  "updates-archive"
   "fedora-cisco-openh264"
   "rpmfusion-free"
   "rpmfusion-free-updates"

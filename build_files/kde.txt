@@ -1,6 +1,5 @@
 # Específico do KDE/Plasma (remover se usar outro desktop, ex. GNOME)
-@kde-desktop --exclude=kcharselect,krfb,kwrite   # Metapacote do Plasma (exclui seletor de caracteres, VNC compartilhado e editor simples)
-ksystemlog                  # Visualizador de logs do sistema do KDE
+@kde-desktop                # Metapacote do Plasma (exclusões em removed.txt: kcharselect, krfb, kwrite)
 plasma-wallpapers-dynamic   # Papéis de parede dinâmicos do Plasma
 kcalc                       # Calculadora do KDE
 plasma-firewall             # Configuração de firewall do Plasma

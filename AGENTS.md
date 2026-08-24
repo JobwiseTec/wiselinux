@@ -6,7 +6,8 @@ Repositório **bootc** (Universal Blue image-template) que gera o "WiseLinux" �
 
 - `Containerfile` é uma **casca fina**: não instala nada inline. Estágio `ctx` (scratch) copia `build_files/`, `system_files/` e os expõe como bind mount em `/ctx` durante o build (não vão para a imagem final). O build real roda `/ctx/build.sh`.
 - `build_files/build.sh` é o **orquestrador** (padrão ublue/bos/bluefin): derrama `system_files/` na raiz, cria symlinks `/opt`→`/var/opt` e `/usr/local`→`/var/usrlocal` (necessários pois `/usr` é read-only no OSTree) e roda, em ordem alfabética, os **scripts numerados** de `build_files/scripts/`:
-  - `01-packages.sh` — RPM Fusion + instala `base.txt`/`kde.txt`, remove `removed.txt`, `dnf5 clean all`
+  - `00-rpms.sh` — instala RPMs locais de `build_files/files/rpm/` (gitignored; pode haver vários; pasta vazia não falha)
+  - `01-packages.sh` — RPM Fusion + repos de apps (COPRs/Microsoft) habilitados temporariamente; instala `base.txt`/`app.txt`/`kde.txt`, remove `removed.txt`, desabilita os repos de terceiros e roda `dnf5 clean all`
   - `02-branding.sh` — identidade os-release → WiseLinux
   - `03-services.sh` — `systemctl enable`/`mask` + `firewall-offline-cmd`
   - `04-cleanup.sh` — higiene bootc conservadora
@@ -14,8 +15,10 @@ Repositório **bootc** (Universal Blue image-template) que gera o "WiseLinux" �
   - `20-tests.sh` — valida branding, pacotes presentes/ausentes e serviços habilitados; falha aborta o build
 - **Listas declarativas de pacotes** (edite estas, não os scripts):
   - `build_files/base.txt` — pacotes nativos de sistema
+  - `build_files/app.txt` — apps de repos de terceiros (VSCode Microsoft, yazi, vm-curator, JetBrains Mono, Firefox pt-BR)
   - `build_files/kde.txt` — pacote KDE/Plasma
   - `build_files/removed.txt` — pacotes a remover (ex.: mariadb, PackageKit)
+  - RPMs locais (TOTVS Web Agent etc.) vão em `build_files/files/rpm/` (pasta `.gitignore`d; instalação pelo `00-rpms.sh`)
   - Não há mais lista de flatpaks: o bootstrap de Flatpaks (`post-install.service`) foi removido por enquanto.
 - `system_files/` espelha a árvore final do sistema (`etc/`, `usr/`) e é copiada intacta para a raiz.
 
