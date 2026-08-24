@@ -1,0 +1,13 @@
+
+PackageKit                  # updates automáticos de RPM — conflita com o modelo bootc
+plasma-browser-integration  # integração com navegador — não utilizada
+firewall-config             # GUI GTK de firewall — usamos plasma-firewall (KDE)
+mariadb                     # Banco de dados MariaDB (servidor) — não utilizado
+mariadb-server              # Servidor MariaDB (não utilizado)
+mariadb-common              # Arquivos comuns do MariaDB (não utilizado)
+mariadb-errmsg              # Mensagens de erro do MariaDB (não utilizado)
+mariadb-connector-c         # Conector C do MariaDB (não utilizado)
+mariadb-connector-c-config  # Config do conector C do MariaDB (não utilizado)
+mariadb-backup              # Ferramenta de backup do MariaDB (não utilizado)
+mariadb-cracklib-password-check  # Checagem de senha cracklib do MariaDB (não utilizado)
+mariadb-gssapi-server       # Suporte GSSAPI do MariaDB (não utilizado) 

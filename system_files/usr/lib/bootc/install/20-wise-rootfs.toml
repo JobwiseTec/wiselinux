@@ -1,0 +1,6 @@
+# Tipo de filesystem raiz padrão da imagem (lido por bootc / bootc-image-builder).
+# Necessário para o BIB gerar ISO sem --rootfs: o particionamento real do ISO vem
+# do kickstart (disk_config/iso.toml); este default só satisfaz a exigência do BIB
+# de a imagem declarar um rootfs. Para qcow2/raw o Justfile passa --rootfs=btrfs.
+[install.filesystem.root]
+type = "btrfs"

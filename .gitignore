@@ -1,0 +1,13 @@
+cosign.key
+_build_*
+output
+_build-*/**
+_build-*
+
+# Editor / local tooling caches
+.vscode/
+.claude/
+
+# Build junk / stray files
+console_error.log
+e3421e679c93

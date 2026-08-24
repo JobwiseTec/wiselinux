@@ -1,0 +1,4 @@
+# Config system-wide do Konsole (KDE lê /etc/xdg como default; ~/.config vence).
+# Define o perfil Wise (fonte MesloLGS NF) como padrão pra todos usuários.
+[Desktop Entry]
+DefaultProfile=Wise.profile

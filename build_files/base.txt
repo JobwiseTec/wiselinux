@@ -1,0 +1,144 @@
+# Cli
+btop        # Monitor de recursos do sistema (CPU, RAM, disco, rede) em terminal
+zoxide      # Atalho inteligente de navegação entre diretórios (substituto do cd)
+eza         # Listador de arquivos moderno (substituto do ls, com ícones e git)
+yazi        # Gerenciador de arquivos em terminal (TUI, rápido e moderno)
+gh          # CLI oficial do GitHub
+
+#Firmware e Drivers Gráficos Universais (AMD e Intel)
+mesa-vulkan-drivers         # Drivers Vulkan da Mesa (aceleração 3D)
+mesa-va-drivers             # Drivers VA-API da Mesa (aceleração de vídeo)
+mesa-libGL                  # Implementação OpenGL da Mesa
+amd-gpu-firmware            # Firmware das GPUs AMD
+intel-gpu-firmware          # Firmware das GPUs Intel
+xorg-x11-drv-amdgpu         # Driver Xorg para GPUs AMD
+libva-intel-media-driver    # Driver de mídia VA-API para GPUs Intel
+linux-firmware              # Coleção de firmwares para o kernel Linux
+
+# Firmwares de Rede (Wi-Fi)
+iwlwifi-mvm-firmware        # Firmware Wi-Fi Intel (série MVM)
+iwlwifi-mld-firmware        # Firmware Wi-Fi Intel (série MLD)
+realtek-firmware            # Firmware para dispositivos Realtek
+
+# Plymounth Firula torna o boot agradável
+plymouth                    # Tela de boot gráfica (splash) durante a inicialização
+plymouth-core-libs          # Bibliotecas principais do Plymouth
+plymouth-graphics-libs      # Bibliotecas gráficas de renderização do Plymouth
+plymouth-plugin-label       # Plugin de exibição de texto/rótulos na tela de boot
+plymouth-plugin-two-step    # Plugin de animação em duas etapas do Plymouth
+plymouth-scripts            # Scripts auxiliares do Plymouth (geração de initrd, etc.)
+plymouth-system-theme       # Tema padrão do sistema para o Plymouth
+plymouth-theme-spinner      # Tema "spinner" do Plymouth
+
+# Utilitários de Sistema e Segurança
+fwupd                       # Daemon de atualização de firmware (LVFS)
+setroubleshoot              # Diagnóstico e resolução de alertas do SELinux
+@networkmanager-submodules  # Submódulos do NetworkManager (VPN, Wi-Fi, etc.)
+@multimedia                 # Grupo de codecs e ferramentas multimídia
+alsa-firmware               # Firmware para placas de som ALSA
+autofs                      # Montagem automática de sistemas de arquivos
+borgbackup                  # Backup deduplicado e criptografado
+davfs2                      # Montagem de sistemas de arquivos WebDAV
+evtest                      # Testa e exibe eventos de dispositivos de entrada
+glow                        # Renderizador de Markdown no terminal
+git                         # Versionamento de codigo    
+git-credential-libsecret    # Helper de credenciais Git via libsecret (keyring)
+grub2-tools-extra           # Ferramentas extras do GRUB2
+gum                         # Componentes de interface para scripts shell (prompts)
+gvfs                        # Sistema de arquivos virtual do GNOME (montagens, lixeira)
+gvfs-fuse                   # Backend FUSE para o GVFS
+icoutils                    # Utilitários para extrair ícones de arquivos do Windows
+ifuse                       # Monta o sistema de arquivos de dispositivos iOS
+igt-gpu-tools               # Ferramentas de teste de GPU (Intel GPU Tools)
+iwd                         # Daemon de rede sem fio (alternativa ao wpa_supplicant)
+just                        # Executor de comandos baseado em arquivos justfile
+krb5-workstation            # Estação de trabalho Kerberos (autenticação)
+libcamera-gstreamer         # Plugin GStreamer para a biblioteca libcamera
+libcamera-tools             # Ferramentas de linha de comando da libcamera
+libimobiledevice-utils      # Utilitários para comunicação com dispositivos iOS
+libratbag-ratbagd           # Daemon de configuração de mouses (libratbag)
+libxcrypt-compat            # Compatibilidade com a antiga libcrypt
+lm_sensors                  # Monitoramento de sensores de hardware (temperatura, voltagem)
+lshw                        # Lista o hardware do computador
+oddjob-mkhomedir            # Cria o diretório home do usuário no primeiro login
+openrgb-udev-rules          # Regras udev do OpenRGB (controle de iluminação RGB)
+pam-u2f                     # Módulo PAM para autenticação U2F (chaves de segurança)
+pam_yubico                  # Módulo PAM para autenticação com YubiKey
+pamu2fcfg                   # Gera credenciais U2F para uso com PAM
+powerstat                   # Mede o consumo de energia do sistema
+powertop                    # Diagnóstico e otimização de consumo de energia
+rclone                      # Sincronização de arquivos com armazenamento em nuvem
+restic                      # Backup rápido, seguro e deduplicado
+samba-winbind               # Cliente Samba/AD para integração de domínio (winbind)
+samba-winbind-clients       # Ferramentas cliente do winbind
+samba-winbind-modules       # Módulos NSS/PAM do winbind
+setools-console             # Ferramentas de console para política do SELinux
+squashfs-tools              # Ferramentas para sistemas de arquivos SquashFS
+symlinks                    # Gerencia e converte links simbólicos
+tcpdump                     # Captura e análise de tráfego de rede (linha de comando)
+tesseract-devel             # Cabeçalhos de desenvolvimento do Tesseract OCR
+tmux                        # Multiplexador de terminais
+traceroute                  # Rastreia a rota dos pacotes na rede
+yubikey-manager             # Gerenciamento de chaves de segurança YubiKey
+ffmpegthumbnailer           # Gera miniaturas de vídeos via FFmpeg
+xdg-utils                   # Utilitários para integração com o ambiente desktop (XDG)
+compsize                    # Calcula o uso real de disco em sistemas Btrfs
+tree                        # Lista o conteúdo de diretórios em árvore
+tuned                       # Daemon de ajuste de desempenho do sistema
+tuned-ppd                   # Daemon de gerenciamento de energia (power profiles)
+zram-generator              # Configura um dispositivo de swap comprimido na RAM
+fpaste                      # Cola texto/saída em um serviço de paste online
+auditctl                    # Controla o subsistema de auditoria do kernel
+unzip                       # Descompacta arquivos .zip
+unrar                       # Descompacta arquivos .rar
+usbutils                    # Utilitários para dispositivos USB (lsusb)
+sysfsutils                  # Interface para o sistema de arquivos sysfs
+bash-color-prompt           # Prompt do Bash colorido
+bash-completion             # Autocompletar de comandos no Bash
+strongswan                  # Implementação de IPsec/IKE para criação de VPNs
+NetworkManager-strongswan   # Integração do strongSwan com o NetworkManager
+micro                       # Editor de texto moderno para terminal
+btrfs-assistant             # Interface gráfica para administração de sistemas Btrfs
+kitty                       # Emulador de terminal gráfico moderno e rápido
+dnfdragora                  # GUI para gerenciamento de pacotes do sistema (dnf)
+
+# Fontes e Suporte a Idiomas
+JetBrainsMono                # Fonte monoespaçada JetBrains Mono (para programação)
+tesseract-langpack-por          # Dados de idioma do Tesseract OCR (português)
+tesseract-langpack-eng          # Dados de idioma do Tesseract OCR (inglês)
+tesseract-langpack-fra          # Dados de idioma do Tesseract OCR (francês)
+glibc-langpack-pt               # Locale do glibc para português
+fira-code-fonts                 # Fonte monoespaçada Fira Code (com ligaduras)
+cascadia-code-fonts             # Fonte monoespaçada Cascadia Code da Microsoft
+langpacks-fonts-pt              # Pacote de fontes para português
+langpacks-pt_BR                 # Suporte de idioma para português do Brasil
+langpacks-core-pt_BR            # Suporte de idioma essencial para português do Brasil
+google-noto-sans-fonts          # Fonte Noto Sans (sem serifa, ampla cobertura)
+google-noto-serif-fonts         # Fonte Noto Serif (com serifa)
+google-noto-color-emoji-fonts   # Fonte de emojis coloridos Noto
+google-noto-sans-balinese-fonts # Fonte Noto Sans para escrita balinesa
+fontawesome-fonts-all           # Conjunto completo de fontes de ícones Font Awesome
+
+#Ecossistema de Contêineres
+toolbox               # Contêineres de ferramentas de desenvolvimento mutáveis
+distrobox             # Cria e gerencia contêineres integrados ao sistema host
+podman                # Engine de contêineres sem daemon, compatível com OCI
+podman-compose        # Orquestração estilo docker-compose pro podman
+podman-docker         # Compat CLI docker pro podmaVirtualização
+
+# Virtualização
+qemu-kvm              # Metapacote para virtualização KVM; instala qemu-system-x86
+libvirt               # API e serviços para gerenciamento das máquinas virtuais
+virt-manager          # Interface gráfica para criar e administrar máquinas virtuais
+virt-viewer           # Visualizador de consoles SPICE/VNC das máquinas virtuais
+qemu-img              # Criação, conversão, redimensionamento e manipulação de imagens de disco
+swtpm                 # Emulação de TPM 2.0 para máquinas virtuais
+edk2-ovmf             # Firmware UEFI/OVMF para máquinas virtuais
+passt                 # Conectividade de rede para determinados cenários de VMs/containers
+spice-vdagent         # Agente de integração SPICE para máquinas virtuais
+vm-curator            # Criação/configuração de máquinas virtuais (COPR linuxgamerlife/lgl-vm-curator)
+
+#Desenvolvimento
+code        # VSCodium (repo oficial paulcarroty)
+firefox       # Navegador Mozilla Firefox
+web-agent-linux-x64.rpm  # TOTVS Web Agent (RPM local em files/dnf/)

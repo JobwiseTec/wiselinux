@@ -1,0 +1,14 @@
+# Específico do KDE/Plasma (remover se usar outro desktop, ex. GNOME)
+@kde-desktop --exclude=kcharselect,krfb,kwrite   # Metapacote do Plasma (exclui seletor de caracteres, VNC compartilhado e editor simples)
+ksystemlog                  # Visualizador de logs do sistema do KDE
+plasma-wallpapers-dynamic   # Papéis de parede dinâmicos do Plasma
+kcalc                       # Calculadora do KDE
+plasma-firewall             # Configuração de firewall do Plasma
+kcolorchooser               # Seletor de cores do KDE
+kolourpaint                 # Editor de imagem simples, estilo Paint
+haruna                      # Reprodutor de vídeo do KDE/mpv
+kclock                      # Relógio, alarmes e timers do KDE
+kate                        # Editor de texto avançado do KDE (múltiplos documentos, IDE leve)
+wireshark                   # Analisador de tráfego de rede (sniffer, pacotes)
+okular                      # Visualizador de documentos (PDF, imagens, e-books)
+gwenview                    # Visualizador de imagens do KDE 
