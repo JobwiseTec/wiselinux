@@ -22,6 +22,12 @@ set -ouex pipefail
 # ============================================================================
 cp -avf /ctx/system_files/. /
 
+# Flatpaks de 1º boot (mecanismo --user) — instalados em /usr na imagem.
+# A lista/script e o serviço ficam em build_files/flatpaks/ (não em system_files,
+# pois só rodam no 1º boot do sistema, não no build).
+install -Dm755 /ctx/flatpaks/wise-flatpaks.sh /usr/libexec/wise/wise-flatpaks.sh
+install -Dm644 /ctx/flatpaks/wise-flatpaks.service /usr/lib/systemd/system/wise-flatpaks.service
+
 # /usr é read-only no OSTree. /opt e /usr/local precisam apontar p/ /var.
 mkdir -vp /var/roothome /var/home /data
 

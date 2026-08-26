@@ -32,11 +32,14 @@ plymouth-theme-spinner      # Tema "spinner" do Plymouth
 # Utilitários de Sistema e Segurança
 fwupd                       # Daemon de atualização de firmware (LVFS)
 setroubleshoot              # Diagnóstico e resolução de alertas do SELinux
+flatpak                     # Gerenciador de aplicativos Flatpak (apps Flathub no Discover)
 @networkmanager-submodules  # Submódulos do NetworkManager (VPN, Wi-Fi, etc.)
 @multimedia                 # Grupo de codecs e ferramentas multimídia
 alsa-firmware               # Firmware para placas de som ALSA
 autofs                      # Montagem automática de sistemas de arquivos
 borgbackup                  # Backup deduplicado e criptografado
+rsnapshot                   # Backups incrementais via hardlinks/snapshots (rsync)
+restic                      # Backup rápido, seguro e deduplicado
 davfs2                      # Montagem de sistemas de arquivos WebDAV
 evtest                      # Testa e exibe eventos de dispositivos de entrada
 glow                        # Renderizador de Markdown no terminal

@@ -1,0 +1,13 @@
+[Unit]
+Description=WiseLinux Flatpaks (instalação no primeiro boot)
+After=network-online.target
+Wants=network-online.target
+ConditionFirstBoot=yes
+
+[Service]
+Type=oneshot
+ExecStart=/usr/libexec/wise/wise-flatpaks.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

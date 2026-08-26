@@ -11,3 +11,5 @@ kate                        # Editor de texto avançado do KDE (múltiplos docum
 wireshark                   # Analisador de tráfego de rede (sniffer, pacotes)
 okular                      # Visualizador de documentos (PDF, imagens, e-books)
 gwenview                    # Visualizador de imagens do KDE 
+ffmpegthumbs                # Miniaturas de vídeo no Dolphin
+kdegraphics-thumbnailers    # Miniaturas de imagens/documentos no Dolphin
