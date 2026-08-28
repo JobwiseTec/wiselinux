@@ -41,6 +41,7 @@ check_cmd "gh instalado" rpm -q gh
 check_cmd "fira-code-fonts instalado" rpm -q fira-code-fonts
 check_cmd "ffmpegthumbs instalado" rpm -q ffmpegthumbs
 check_cmd "kdegraphics-thumbnailers instalado" rpm -q kdegraphics-thumbnailers
+check_cmd "cosign instalado" test -x /usr/local/bin/cosign
 
 # --- Pacotes que devem ter sido removidos ---
 check_absent "PackageKit removido" PackageKit

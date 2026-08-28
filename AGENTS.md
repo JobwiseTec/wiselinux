@@ -11,6 +11,7 @@ Repositório **bootc** (Universal Blue image-template) que gera o "WiseLinux" �
   - `02-branding.sh` — identidade os-release → WiseLinux
   - `03-services.sh` — `systemctl enable`/`mask` + `firewall-offline-cmd`
   - `04-cleanup.sh` — higiene bootc conservadora
+  - `06-cosign.sh` — baixa e instala o CLI `cosign` (sigstore) em `/usr/local/bin` (não está nos repos Fedora; binário estático Go via GitHub Releases)
   - `validate-repos.sh` — falha se houver repo de terceiros habilitado além de Fedora/RPM Fusion (usa `dnf5 repo list --json` + python3)
   - `20-tests.sh` — valida branding, pacotes presentes/ausentes e serviços habilitados; falha aborta o build
 - **Listas declarativas de pacotes** (edite estas, não os scripts):
