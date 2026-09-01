@@ -1,6 +1,6 @@
 
 PackageKit                  # updates automáticos de RPM — conflita com o modelo bootc
-fedora-flathub-remote       # remoto "Fedora Flatpaks" — deixamos só o Flathub no Discover
+fedora-flathub-remote       # fedora-third-party (adiciona Flathub no login) — Flathub agora vem do sistema via system_files/etc/flatpak/remotes.d/
 kcharselect                 # Seletor de caracteres (removido do @kde-desktop)
 krfb                        # Compartilhamento de tela VNC do KDE (removido do @kde-desktop)
 kwrite                      # Editor de texto simples do KDE (removido do @kde-desktop)

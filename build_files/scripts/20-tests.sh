@@ -47,6 +47,10 @@ check_cmd "cosign instalado" test -x /usr/local/bin/cosign
 check_absent "PackageKit removido" PackageKit
 check_absent "mariadb-server removido" mariadb-server
 
+# --- Discover / Flatpak: Flathub puro (sem repos Fedora) ---
+check_cmd "flathub.flatpakrepo presente no sistema" test -f /etc/flatpak/remotes.d/flathub.flatpakrepo
+check_cmd "flatpak-add-fedora-repos.service removido" test ! -e /usr/lib/systemd/system/flatpak-add-fedora-repos.service
+
 # --- Serviços habilitados ---
 check_cmd "libvirtd habilitado" systemctl is-enabled libvirtd
 

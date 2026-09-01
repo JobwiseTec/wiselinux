@@ -9,6 +9,10 @@
 set -ouex pipefail
 
 rm -rf /run/* /tmp/* /var/tmp/* 2>/dev/null || true
+# Flatpak puro: remove o serviço que re-adiciona os remotos "Fedora Flatpaks"
+# (fedora/fedora-testing, via oci) no 1º boot — o Flathub vem no sistema via
+# /etc/flatpak/remotes.d/flathub.flatpakrepo (system_files).
+rm -f /usr/lib/systemd/system/flatpak-add-fedora-repos.service
 rm -f /var/lib/dnf/system-repo.lock \
       /var/lib/authselect/checksum \
       /var/lib/systemd/catalog/database \

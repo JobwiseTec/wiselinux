@@ -21,6 +21,7 @@ Repositório **bootc** (Universal Blue image-template) que gera o "WiseLinux" �
   - `build_files/removed.txt` — pacotes a remover (ex.: mariadb, PackageKit)
   - RPMs locais (TOTVS Web Agent etc.) vão em `build_files/files/rpm/` (pasta `.gitignore`d; instalação pelo `00-rpms.sh`)
   - Não há mais lista de flatpaks: o bootstrap de Flatpaks (`post-install.service`) foi removido por enquanto.
+- **Discover/Flatpak (padrão RYnux):** o Discover é "Flathub puro". `removed.txt` tira `PackageKit` (some o backend RPM do Discover) e `fedora-flathub-remote`; `04-cleanup.sh` remove `flatpak-add-fedora-repos.service` (que re-adicionaria os remotos "Fedora Flatpaks" `fedora`/`fedora-testing` via oci no 1º boot). O Flathub vem como remoto do sistema via `system_files/etc/flatpak/remotes.d/flathub.flatpakrepo` (baixado de `https://dl.flathub.org/repo/flathub.flatpakrepo`). Assim o usuário vê só "Flathub" no Discover; `wise-flatpaks.sh` cria seu próprio remoto flathub `--user` (escopo root) no 1º boot apenas para os installs de apps (Brave, Telegram, Remmina, KeePassXC).
 - `system_files/` espelha a árvore final do sistema (`etc/`, `usr/`) e é copiada intacta para a raiz.
 
 ## Build e build de imagens de disco (via `just`)
